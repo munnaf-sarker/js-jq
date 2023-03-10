@@ -1,0 +1,158 @@
+#div1{
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  display: none;
+}
+#div2{
+  width: 80px;
+  height: 80px;
+  background-color: green;
+  display: none;
+}
+#div3{
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  display: none;
+}
+#div4{
+  width: 80px;
+  height: 80px;
+  background-color: red;
+}
+#div5{
+  width: 80px;
+  height: 80px;
+  background-color: green;
+}
+#div6{
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+}
+#div7{
+  width: 80px;
+  height: 80px;
+  background-color: red;
+}
+#div8{
+  width: 80px;
+  height: 80px;
+  background-color: green;
+}
+#div9{
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+}
+#div10{
+  width: 80px;
+  height: 80px;
+  background-color: red;
+}
+#div11{
+  width: 80px;
+  height: 80px;
+  background-color: green;
+}
+#div12{
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+}
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: 1px solid #c3c3c3;
+}
+#panel {
+  padding: 50px;
+  display: none;
+}
+#panel1, #flip1 {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: 1px solid #c3c3c3;
+}
+#panel1 {
+  padding: 50px;
+}
+#panel2, #flip2 {
+  padding: 5px;
+  text-align: center;
+  background-color: #a6cc3c;
+  border: 1px solid #ed3d3d;
+}
+#panel2 {
+  padding: 50px;
+  display: none;
+}
+.padding{
+  margin-bottom: 250px;
+}
+.thing{
+  width: 100px;
+  height: 100px;
+  background-color: #180a9b;
+  position: absolute;
+}
+.things{
+  width: 100px;
+  height: 100px;
+  background-color: #067a0e;
+  position: absolute;
+}
+.obj{
+  width: 100px;
+  height: 100px;
+  background-color: #0eb619;
+  position: absolute;
+}
+.hell{
+  width: 200px;
+  height: 100px;
+  background-color: #0eb619;
+  position: absolute;
+}
+/* 16.jQuery stop() Method */
+#panelfun, #flipzo {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+#panelfun {
+  padding: 50px;
+  display: none;
+}
+#empx{
+  height:100px;
+  width:300px;
+  border:1px solid black;
+  background-color:yellow;
+}
+/* 23 */
+.important {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.blue {
+  color: blue;
+}
+/* 24 */
+#pgc1{
+  background-color: red;
+}
+#pgc2{
+  background-color: green;
+}
+#pgc3{
+  background-color: blue;
+}

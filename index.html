@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript</title>
+  <!-- fav icon -->
+  <link rel="icon" href="">
+  <!-- css link -->
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">javascript</h1>
+    <!-- date -->
+    <hr>
+    <h4>1.Click me to display Date and Time</h4>
+    <button type="button" class="btn btn-danger" onclick="demo()">click me!</button>
+    <p id="p"></p>
+    <!-- bulb -->
+    <hr>
+    <h4>2.In this case JavaScript changes the value of the src (source) attribute of an image.</h4>
+    <button type="button" class="btn btn-warning" onclick="on()">Turn on the light</button>
+    <img id="img" src="image/off.gif" style="width:100px" alt="js">
+    <button type="button" class="btn btn-dark" onclick="off()">Turn off the light</button>
+    <!-- font size -->
+    <hr>
+    <h4>3.JavaScript can change the style and fontsize.</h4>
+    <p id="font">JavaScript can change the style of an HTML element.</p>
+    <button type="button" class="btn btn-primary" onclick="size()">click me!</button>
+    <!-- text hide -->
+    <hr>
+    <h4>4.JavaScript can hide HTML elements.</h4>
+    <p id="h">JavaScript can hide HTML elements.==JavaScript can hide HTML elements.</p>
+    <button type="button" class="btn btn-danger" onclick="hide()">click and hide</button>
+    <button type="button" class="btn btn-primary" onclick="block()">click and block</button>
+    <!-- text   change -->
+    <hr>
+    <h4>5.text changing javascript</h4>
+    <p id="mytext">A Peragraph start but not change.</p>
+    <button class="btn btn-dark" onclick="change()">click me!</button>
+    <!-- JavaScript Numbers --><hr>
+    <h4>6.Number can be written with or without decimals.</h4>
+    <p id="num"></p>
+    <!-- strings --><hr>
+    <h4>7.Strings can be written with double or single quotes.</h4>
+    <p id="str"></p>
+    <!-- javascript variable --><hr>
+    <h4>8.javascript variable</h4>
+    <p>In this example, x is defined as a variable.Then, x is assigned the value of 6:</p>
+    <p id="vari"></p>
+    <!-- var variable keyword --><hr>
+    <h4>9.var variable keyword</h4>
+    <p>In this example, a, y, and z are variables.</p>
+    <p id="vai"></p>
+    <!-- const variable keyword --><hr>
+    <h4>10.const variable keyword</h4>
+    <p>In this example, price1, price2, and total are variables.</p>
+    <p id="con"></p>
+    <!-- constant object and array --><hr>
+    <h4>11.const object with array</h4>
+    <p>constant object and array.</p>
+    <p id="oa"></p>
+    <!-- constant object --><hr>
+    <h4>12.const object</h4>
+    <p>constant object with object proparties.</p>
+    <p id="cp"></p>
+  </div>
+  <div class="container">
+    <!-- Addition Operator --><hr>
+    <h4>13.The + Operator</h4>
+    <p>Addition Operator.</p>
+    <p id="ad"></p>
+    <!-- subtraction operator --><hr>
+    <h4>14.The - Operator</h4>
+    <p>subtraction operator.</p>
+    <p id="su"></p>
+    <!-- multiplication operator --><hr>
+    <h4>15.The * Operator</h4>
+    <p>multiplication operator.</p>
+    <p id="mu"></p>
+    <!-- division operator --><hr>
+    <h4>16.The / Operator</h4>
+    <p>division operator.</p>
+    <p id="di"></p>
+    <!-- modulus operator --><hr>
+    <h4>17.The % Operator</h4>
+    <p>modulus operator.</p>
+    <p id="mo"></p>
+    <!-- increment operator --><hr>
+    <h4>18.The ++ Operator</h4>
+    <p>increment operator.</p>
+    <p id="in"></p>
+    <!-- decrement operator --><hr>
+    <h4>19.The -- Operator</h4>
+    <p>decrement operator.</p>
+    <p id="de"></p>
+    <!-- exponentiation operator --><hr>
+    <h4>20.The ** Operator</h4>
+    <p>exponentiation operator.</p>
+    <p id="ex"></p>
+    <!-- exponentiation Operator with math.pow --><hr>
+    <h4>21.The exponentiation Operator with math.pow</h4>
+    <p>math.pow</p>
+    <p id="po"></p>
+    <!-- Operator Precedence --><hr>
+    <h4>22.Operator Precedence</h4>
+    <p>Multiplication has precedence over addition.</p>
+    <p id="pre"></p>
+    <p id="pre-i"></p>
+  </div>
+  <!-- assignment oparetor --><hr>
+  <div class="container">
+    <h4>23.Addition Assignment Operator</h4>
+    <p>The Addition Assignment Operator adds a value to a variable.</p>
+    <p id="aao"></p>
+    <!-- Subtraction Assignment Operator --><hr>
+    <h4>24.Subtraction Assignment Operator</h4>
+    <p>The Subtraction Assignment Operator adds a value to a variable.</p>
+    <p id="sao"></p>
+    <!-- Multiplication Assignment Operator --><hr>
+    <h4>25.Multiplication Assignment Operator</h4>
+    <p>The Multiplication Assignment Operator adds a value to a variable.</p>
+    <p id="mao"></p>
+    <!-- Exponentiation Assignment Operator --><hr>
+    <h4>26.Exponentiation Assignment Operator</h4>
+    <p>The Exponentiation Assignment Operator adds a value to a variable.</p>
+    <p id="eao"></p>
+    <!-- Division Assignment Operator --><hr>
+    <h4>27.Division Assignment Operator</h4>
+    <p>The Division Assignment Operator adds a value to a variable.</p>
+    <p id="dao"></p>
+    <!-- Remainder Assignment Operator --><hr>
+    <h4>28.Remainder Assignment Operator</h4>
+    <p>The Remainder Assignment Operator adds a value to a variable.</p>
+    <p id="reao"></p>
+    <!-- JavaScript Booleans --><hr>
+    <h4>29.JavaScript Booleans</h4>
+    <p>Booleans can have two values: true or false:</p>
+    <p id="boo"></p>
+    <!-- JavaScript Objects --><hr>
+    <h4>30.JavaScript Objects</h4>
+    <p>You define (and create) a JavaScript object with an object literal:</p>
+    <p id="obi"></p>
+    <!-- The length Property --><hr>
+    <h4>31.The length Property</h4>
+    <p>The length of the string is:</p>
+    <p id="lstr"></p>
+    <!-- The escape sequence --><hr>
+    <h4>32.The escape sequence</h4>
+    <p>The escape sequence \' inserts a single quote in a string.</p>
+    <p id="esc"></p>
+    <!-- The Integer Accuracy --><hr>
+    <h4>33. The Integer Accuracy</h4>
+    <p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits:</p>
+    <p id="ina"></p>
+    <!-- The Integer Accuracy --><hr>
+    <h4>34. bigint Number.isInteger() Method</h4>
+    <p>The isInteger() method returns true if the argument is an integer.</p>
+    <p>Otherwise it returns false.</p>
+    <p id="nin"></p>
+    <!-- The isSafeInteger() Method --><hr>
+    <h4>35. bigint The isSafeInteger() Method</h4>
+    <p>The isSafeInteger() Method returns true if the argument is an integer.</p>
+    <p>Otherwise it returns false.</p>
+    <p id="nins"></p>
+    <!-- The toFixed() Method --><hr>
+    <h4>36.number The toFixed() Method</h4>
+    <p>The toFixed() method rounds a number to a given number of digits.</p>
+    <p>For working with money, toFixed(2) is perfect.</p>
+    <p id="fixm"></p>
+    <!-- JavaScript Global Methods--><hr>
+    <h4>37.JavaScript Global Methods</h4>
+    <p>The Number() method converts variables to numbers:</p>
+    <p id="glom"></p>
+    <!-- JavaScript Array splice--><hr>
+    <h4>38.JavaScript Array splice</h4>
+    <p>The splice() method adds new elements to an array:</p>
+    <p id="spli-1"></p>
+    <p id="spli-2"></p>
+    <!-- Sorting an Array--><hr>
+    <h4>39.Sorting an Array</h4>
+    <p>The sort() method sorts an array alphabetically:</p>
+    <p id="sora-1"></p>
+    <p id="sora-2"></p>
+    <!-- JavaScript Array Sort --><hr>
+    <h4>40.JavaScript Array Sort</h4>
+    <p>Sort the array in ascending order:</p>
+    <p id="arrs-1"></p>
+    <p id="arrs-2"></p>
+    <!-- JavaScript Array Sort descending --><hr>
+    <h4>41.JavaScript Array Sort descending</h4>
+    <p>Sort the array in descending order:</p>
+    <p id="drrs-1"></p>
+    <p id="drrs-2"></p>
+    <!-- JavaScript Array Sort array alphabetically or numerically --><hr>
+    <h4>42.JavaScript Array Sort array alphabetically or numerically</h4>
+    <p>Click the buttons to sort the array alphabetically or numerically.</p>
+    <button class="btn btn-danger" onclick="alfa()">Sort Alphabetically</button>
+    <button class="btn btn-primary" onclick="numr()">Sort Numerically</button>
+    <p id="arran"></p>
+    <!-- array sort random number--><hr>
+    <h4>43.JavaScript Array Sort random number</h4>
+    <p>Click the button (again and again) to sort the array in random order.</p>
+    <button class="btn btn-dark" onclick="ran()">Try it</button>
+    <p id="rnum"></p>
+    <!-- Array Sort highest number --><hr>
+    <h4>44.Array Sort highest number</h4>
+    <p>The highest number is <span id="hinu"></span>.</p>
+    <!-- JavaScript Array.filter() --><hr>
+    <h4>45.JavaScript Array.filter()</h4>
+    <p>Create a new array with all array elements that passe a test.</p>
+    <p id="fil"></p>
+    <!-- JavaScript Array.reduce() --><hr>
+    <h4>46.JavaScript Array.reduce()</h4>
+    <p>This example finds the sum of all numbers in an array:</p>
+    <p id="rufi"></p>
+    <!-- JavaScript new Date() --><hr>
+    <h4>47.JavaScript new Date()</h4>
+    <p>Using new Date(7 numbers), creates a new date object with the specified date and time:</p>
+    <p id="newda"></p>
+    <!-- The getFullYear() Method --><hr>
+    <h4>48.The getFullYear() Method</h4>
+    <p>Return the full year of a date object:</p>
+    <p id="newdat"></p>
+    <!-- JavaScript if .. else --><hr>
+    <h4>49.JavaScript if .. else</h4>
+    <p>A time-based greeting:</p>
+    <p id="els"></p>
+    <!-- JavaScript switch --><hr>
+    <h4>50.JavaScript switch</h4>
+    <p id="swi"></p>
+
+  </div>
+
+
+  <!-- jquery -->
+<div class="container">
+  <h1 class="text-center">jquery start</h1>
+  <!-- jQuery hide() and show() --><hr>
+  <h4>1.jQuery hide() and show()</h4>
+  <p class="topic">If you click on the"Hide"button I will disappear.</p>
+  <button class="btn btn-danger" id="hide">Hide</button>
+  <button class="btn btn-primary" id="show">Show</button>
+  <!-- jQuery hide() and show() --><hr>
+  <h4>2.jQuery hide() and show() with fade</h4>
+  <button class="btn btn-dark" id="top">Hide</button>
+  <p class="pa">This is a paragraph with little content.</p>
+  <p class="pa">This is another small paragraph.</p>
+  <!-- jQuery toggle() --><hr>
+  <h4>3.jQuery toggle()</h4>
+  <button class="btn btn-warning" id="topi">toggle</button>
+  <p class="pat">This is a paragraph with little content.</p>
+  <p class="pat">This is another small paragraph.</p>
+  <!-- jQuery fadeIn() Method --><hr>
+  <h4>4.jQuery fadeIn() Method</h4>
+  <p>Demonstrate fadeIn() with different parameters.</p>
+  <button class="btn btn-info" id="cli">Click to fade in boxes</button><br><br>
+  <div id="div1"></div><br>
+  <div id="div2"></div><br>
+  <div id="div3"></div><br>
+  <!-- jQuery fadeout() Method --><hr>
+  <h4>5.jQuery fadeout() Method</h4>
+  <p>Demonstrate fadeout() with different parameters.</p>
+  <button class="btn btn-success" id="clic">Click to fade out boxes</button><br><br>
+  <div id="div4"></div><br>
+  <div id="div5"></div><br>
+  <div id="div6"></div><br>
+  <!-- jQuery fadeToggle() Method --><hr>
+  <h4>6.jQuery fadeToggle() Method</h4>
+  <p>Demonstrate fadeToggle() with different speed parameters.</p>
+  <button id="finl" class="btn btn-warning">Click to fade in/out boxes</button><br><br>
+  <div id="div7"></div><br>
+  <div id="div8"></div><br>
+  <div id="div9"></div><br>
+  <!-- jQuery fadeTo() Method --><hr>
+  <H4>7.jQuery fadeTo() Method</H4>
+  <P>Demonstrate fadeTo() with different parameters.</P>
+  <button id="fito" class="btn btn-info">Click to fade boxes</button><br><br>
+  <div id="div10"></div><br>
+  <div id="div11"></div><br>
+  <div id="div12"></div><br>
+  <!-- jQuery slideDown() Method --><hr>
+  <h4>8.jQuery slideDown() Method</h4>
+  <p>The jQuery slideDown() method is used to slide down an element.</p>
+  <div id="flip">Click to slide down panel</div>
+  <div id="panel">Hello world!</div>
+  <!-- jQuery slideDown() Method --><hr>
+  <h4>9.jQuery slideUp() Method</h4>
+  <p>The jQuery slideUp() method is used to slide up an element.</p>
+  <div id="flip1">Click to slide down panel</div>
+  <div id="panel1">Hello world!</div>
+  <!-- jQuery slideDown() Method --><hr>
+  <h4>10.jQuery slideToggle() Method</h4>
+  <p>The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods.</p>
+  <div id="flip2">Click to slide down panel</div>
+  <div id="panel2">Hello world!</div>
+  <!-- jQuery animate() - Manipulate Multiple Properties --><hr>
+  <div class="padding">
+  <h4>11.jQuery animate() - Manipulate Multiple Properties</h4>
+  <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+  <button class="btn btn-info" id="but">Start Animation</button><br>
+  <div class="thing"></div>
+  </div>  
+  <!-- jQuery animate() - Using Relative Values --><hr>
+  <div class="padding">
+  <h4>12.jQuery animate() - Using Relative Values</h4>
+  <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+  <button class="btn btn-info" id="butt">Start Animation</button><br>
+  <div class="things"></div>
+  </div>  
+  <!-- jQuery animate() - Using Pre-defined Values --><hr>
+  <div class="padding">
+  <h4>13.jQuery animate() - Using Pre-defined Values</h4>
+  <p>Click the button multiple times to toggle the animation.</p>
+  <button class="btn btn-info" id="bnel">Start Animation</button><br>
+  <div class="obj"></div>
+  </div>  
+  <!-- jQuery animate() - Uses Queue Functionality --><hr>
+  <div class="padding">
+  <h4>14.jQuery animate() - Uses Queue Functionality</h4>
+  <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+  <button class="btn btn-danger" id="rotet">Start Animation</button><br>
+  <div class="rot obj"></div>
+  </div>  
+  <!-- jQuery animate() - Uses Queue Functionality --><hr>
+  <div class="padding">
+  <h4>15.jQuery animate() - Uses Queue Functionality--2</h4>
+  <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+  <button class="btn btn-danger" id="rotel">Start Animation</button><br>
+  <div class="hell">HELLO</div>
+  </div>
+  <!-- jQuery stop() Method --> <hr> 
+  <h4>16.jQuery stop() Method</h4>
+  <p>The jQuery stop() method is used to stop an animation or effect before it is finished.</p>
+  <button id="stofi" class="btn btn-info">Stop sliding</button>
+  <div id="flipzo">Click to slide down panel</div>
+  <div id="panelfun">Hello world!</div>
+  <!-- jQuery Callback Functions --><hr>
+  <h4>17.jQuery Callback Functions</h4>
+  <p>JavaScript statements are executed line by line. However, with effects, the next line of code can be run even though the effect is not finished. This can create errors.</p>
+  <button class="btn btn-warning" id="hicon">Hide</button>
+  <p id="lilp">This is a paragraph with little content.</p>
+  <!-- jQuery Method Chaining --><hr>
+  <h4>18.jQuery Method Chaining</h4>
+  <p>Until now we have been writing jQuery statements one at a time.</p>
+  <button class="btn btn-success" id="atti">Click me</button>
+  <p id="p1">jQuery is fun!!</p>
+  <!-- Get Content - text(), html(), and val() --><hr>
+  <h4>19.Get Content - text(), html(), and val()</h4>
+  <p>The following example demonstrates how to get the value of an input field with the jQuery val() method.</p>
+  <button class="btn btn-info" id="metho">Click me</button>
+  <p>Name: <input type="text" id="testy" placeholder="write something"></p>
+  <!-- Set Content - text(), html(), and val() --><hr>
+  <h4>20.Set Content - text(), html(), and val()</h4>
+  <p>The following example demonstrates how to set content with the jQuery text(), html(), and val() methods</p>
+  <p id="velt1">This is a paragraph.</p>
+  <p id="velt2">This is another paragraph.</p>
+  <p>Input field: <input type="text" id="velt3" value="Mickey Mouse"></p>
+  <button id="btnk1" class="btn btn-info">Set Text</button>
+  <button id="btnk2" class="btn btn-info">Set HTML</button>
+  <button id="btnk3" class="btn btn-info">Set Value</button>
+  <!-- jQuery prepend() Method --><hr>
+  <h4>21.jQuery prepend() Method</h4>
+  <p>The jQuery prepend() method inserts content AT THE BEGINNING of the selected HTML elements.</p>
+
+  <p id="apen">This is a paragraph.</p>
+
+  <ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ol>
+
+  <button id="btnd1" class="btn btn-success">Append text</button>
+  <button id="btnd2" class="btn btn-success">Append list items</button>
+  <!-- jQuery empty() Method --><hr>
+  <h4>22.jQuery empty() Method</h4>
+  <p>The jQuery empty() method removes the child elements of the selected element(s).</p>
+  <div id="empx">
+    <p>This is a paragraph in the div.</p>
+    <p>This is another paragraph in the div.</p>
+  </div><br>
+  <button class="btn btn-danger" id="copton">Empty the div element</button>
+  <!-- jQuery addClass() Method --> <hr>
+  <h4>23.jQuery addClass() Method</h4>
+  <p>The following example shows how to add class attributes to different elements. Of course you can select multiple elements, when adding classes</p>
+
+  <h1 id="hh1">Heading 1</h1>
+  <h2 id="hh2">Heading 2</h2>
+
+  <p id="pp1">This is a paragraph.</p>
+  <p id="pp1">This is another paragraph.</p>
+
+  <p id="pp3">This is some important text!</p><br>
+
+  <button class="btn btn-danger" id="elcla">Add classes to elements</button>
+  <!-- Set Multiple CSS Properties --> <hr>
+  <h4>24.Set Multiple CSS Properties</h4>
+  <p>The following example will set a background-color and a font-size for ALL matched elements</p>
+
+  <p class="bgc" style="background-color:#ff0000">This is a paragraph.</p>
+  <p class="bgc" style="background-color:#00ff00">This is a paragraph.</p>
+  <p class="bgc" style="background-color:#0000ff">This is a paragraph.</p>
+  <p class="bgc">This is a paragraph.</p>
+
+  <button class="btn btn-info" id="mlcss">Set multiple styles for p</button>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container"><hr>
+    <div class="row">
+      <div class="col-lg-6">
+        <h4>..1..  jquary form plagin</h4>
+        <form action="#" method="">
+          <div class="mb-4">
+            <label for="topic" class="form-label mb-2">Enter your course topics name</label>
+            <input type="text" id="topic" class="form-control">
+          </div>
+          <button type="button" class="btn btn-dark w-100">submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+  <!-- js/jq link -->
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
